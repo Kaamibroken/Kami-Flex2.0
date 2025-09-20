@@ -11,7 +11,7 @@
     { "src": "/tool", "dest": "/Tool.html" },
     { "src": "/signup", "dest": "/signup.html" },
     { "src": "/signin", "dest": "/signin.html" },
-    { "src": "/data", "dest": "/data.html" },
+    { "src": "/database", "dest": "database/data.html" },
     { "src": "/data.js", "dest": "/data.js" },
     { "src": "/api/(.*)", "dest": "/api/$1.js" }
   ]
