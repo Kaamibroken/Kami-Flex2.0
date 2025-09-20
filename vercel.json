@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "my-vercel-site",
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/home/?", "dest": "/home.html" },
+    { "src": "/Tool/?", "dest": "/Tool.html" },
+    { "src": "/signup/?", "dest": "/signup.html" },
+    { "src": "/signin/?", "dest": "/signin.html" },
+    { "src": "/data/?", "dest": "/data/data.html" },
+    { "src": "/data/(.*)", "dest": "/data/data.js" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
+
