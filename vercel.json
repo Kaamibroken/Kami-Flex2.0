@@ -4,8 +4,8 @@
     { "src": "*.html", "use": "@vercel/static" },
     { "src": "database/*.html", "use": "@vercel/static" },
     { "src": "database/*.js", "use": "@vercel/static" },
-    { "src": "database/images/*", "use": "@vercel/static" },
-    { "src": "data.js", "use": "@vercel/node" }
+    { "src": "images/*", "use": "@vercel/static" },
+    { "src": "api/*.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/", "dest": "/index.html" },
@@ -16,8 +16,8 @@
 
     { "src": "/database/data", "dest": "/database/data.html" },
     { "src": "/database/data.js", "dest": "/database/data.js" },
-    { "src": "/database/images/(.*)", "dest": "/database/images/$1" },
+    { "src": "/images/(.*)", "dest": "/database/images/$1" },
 
-    { "src": "/api/(.*)", "dest": "/data.js" }
+    { "src": "/api/(.*)", "dest": "/api/$1.js" }
   ]
 }
