@@ -16,7 +16,7 @@
 
     { "src": "/database/data", "dest": "/database/data.html" },
     { "src": "/database/data.js", "dest": "/database/data.js" },
-    { "src": "/images/(.*)", "dest": "/database/images/$1" },
+    { "src": "/images/(.*)", "dest": "/images/$1" },
 
     { "src": "/api/(.*)", "dest": "/api/$1.js" }
   ]
