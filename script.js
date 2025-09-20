@@ -1,1 +1,5 @@
-404: Not Found
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
