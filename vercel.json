@@ -2,7 +2,9 @@
   "version": 2,
   "builds": [
     { "src": "*.html", "use": "@vercel/static" },
-    { "src": "*.js", "use": "@vercel/static" },
+    { "src": "database/*.html", "use": "@vercel/static" },
+    { "src": "database/*.js", "use": "@vercel/static" },
+    { "src": "database/images/*", "use": "@vercel/static" },
     { "src": "api/*.js", "use": "@vercel/node" }
   ],
   "routes": [
@@ -11,8 +13,11 @@
     { "src": "/tool", "dest": "/Tool.html" },
     { "src": "/signup", "dest": "/signup.html" },
     { "src": "/signin", "dest": "/signin.html" },
-    { "src": "/database", "dest": "database/data.html" },
-    { "src": "/data.js", "dest": "/data.js" },
+
+    { "src": "/database/data", "dest": "/database/data.html" },
+    { "src": "/database/data.js", "dest": "/database/data.js" },
+    { "src": "/database/images/(.*)", "dest": "/database/images/$1" },
+
     { "src": "/api/(.*)", "dest": "/api/$1.js" }
   ]
 }
